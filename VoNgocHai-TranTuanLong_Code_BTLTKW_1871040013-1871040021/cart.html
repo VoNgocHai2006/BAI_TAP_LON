@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Giỏ hàng của bạn">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <body style="background-color: rgb(176, 176, 176);"></body>
+    <header class="header">
+        <div class="logo">
+            <h1 style="color: rgb(255, 255, 255);">Shop giày Long Hải</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="abc.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="cart">
+        <h2 class="section-title">Giỏ hàng của bạn</h2>
+
+        <div class="cart-item">
+            <img src="giaythethao.jpg" alt="Giày Sneaker Thể Thao">
+            <div class="cart-details">
+                <h3>Giày Sneaker Thể Thao</h3>
+                <p>Giá: 1,200,000 VNĐ</p>
+                <label for="quantity1">Số lượng:</label>
+                <input type="number" id="quantity1" value="1" min="1">
+                <button class="remove-item">Xóa</button>
+            </div>
+        </div>
+
+        <div class="cart-item">
+            <img src="congso.jpg" alt="Giày Công Sở Cao Cấp">
+            <div class="cart-details">
+                <h3>Giày Công Sở Cao Cấp</h3>
+                <p>Giá: 1,800,000 VNĐ</p>
+                <label for="quantity2">Số lượng:</label>
+                <input type="number" id="quantity2" value="1" min="1">
+                <button class="remove-item">Xóa</button>
+            </div>
+        </div>
+
+        <div class="cart-total">
+            <p><strong>Tổng cộng: <span id="totalPrice">3,000,000 VNĐ</span></strong></p>
+            <a href="checkout.html" class="btn">Tiến hành thanh toán</a>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 Shop Giày Long Hải</p>
+    </footer>
+
+    <script src="scripts/cart.js"></script>
+
+</body>
+</html>

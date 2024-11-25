@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trang thanh toán của Shop Giày">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <body style="background-color: rgb(176, 176, 176);"></body>
+    <header class="header">
+        <div class="logo">
+            <h1 style="color: rgb(255, 255, 255);">Shop giày Long Hải</h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="abc.html">Sản phẩm</a></li>
+                <li><a href="cart.html">Giỏ hàng</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="checkout.html">Thanh toán</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="checkout">
+        <h2 class="section-title">Thanh toán</h2>
+
+        <form action="submit_order.php" method="post" class="checkout-form">
+            <h3>Thông tin giao hàng</h3>
+            <div class="form-group">
+                <label for="fullName">Họ và tên</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Nhập tên của bạn" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Địa chỉ giao hàng</label>
+                <input type="text" id="address" name="address" placeholder="Nhập địa chỉ giao hàng" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Nhập email của bạn" required>
+            </div>
+
+            <h3>Phương thức thanh toán</h3>
+            <div class="form-group">
+                <label for="paymentMethod">Chọn phương thức thanh toán:</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="creditCard">Thẻ tín dụng</option>
+                    <option value="cashOnDelivery">Thanh toán khi nhận hàng</option>
+                </select>
+            </div>
+
+            <div id="creditCardInfo" class="payment-details">
+                <div class="form-group">
+                    <label for="cardNumber">Số thẻ tín dụng</label>
+                    <input type="text" id="cardNumber" name="cardNumber" placeholder="Nhập số thẻ tín dụng" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="expiryDate">Ngày hết hạn</label>
+                    <input type="month" id="expiryDate" name="expiryDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="Nhập mã CVV" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Thanh toán</button>
+        </form>
+    </section>
+
+    
+    <footer class="footer">
+        <p>&copy; 2024 Shop Giày Long Hải</p>
+    </footer>
+
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>
